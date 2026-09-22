@@ -3,6 +3,7 @@
   --bg-secondary: #f8f9fa;
   --text-main: #212529;
   --text-muted: #6c757d;
+  --btn-border: #6c757d;
   --accent-color: #0d6efd;
   --accent-hover: #0b5ed7;
   --transition-speed: 0.3s;
@@ -13,6 +14,7 @@
   --bg-secondary: #1e1e1e;
   --text-main: #f8f9fa;
   --text-muted: #a0a0a0;
+  --btn-border: #ffffff;
   --accent-color: #3985ff;
   --accent-hover: #5495ff;
 }
@@ -203,10 +205,6 @@ button {
   color: #ffffff;
 }
 
-.btn--secondary {
-  border: 2px solid var(--text-main);
-}
-
 .slider {
   max-width: 800px;
   margin: 0 auto;
@@ -282,9 +280,10 @@ button {
 
 .category-btn {
   padding: 10px 24px;
-  border: 1px solid var(--text-muted);
+  border: 1px solid var(--btn-border);
   border-radius: 20px;
   font-weight: 500;
+  color: var(--btn-border);
 }
 
 .category-btn.active {
@@ -538,9 +537,16 @@ button {
   transform: translateY(0);
 }
 
+.btn--secondary {
+  border: 2px solid var(--text-main);
+  color: var(--text-main);
+  background-color: transparent;
+}
+
 .btn--secondary:hover {
   background-color: var(--text-main);
   color: var(--bg-primary);
+  border-color: var(--text-main);
   transform: translateY(-2px);
 }
 
