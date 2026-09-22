@@ -500,3 +500,75 @@ button {
     font-size: 16px;
   }
 }
+
+.header__nav-link,
+.theme-toggle,
+.btn,
+.category-btn,
+.card,
+.footer__link,
+.footer-links a {
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              background-color 0.25s ease,
+              color 0.25s ease,
+              box-shadow 0.25s ease,
+              opacity 0.25s ease;
+}
+
+.header__nav-link:hover {
+  color: var(--accent-color);
+  opacity: 0.85;
+}
+
+.theme-toggle:hover {
+  background-color: var(--text-main);
+}
+.theme-toggle:hover .theme-icon {
+  color: var(--bg-primary);
+  transform: rotate(15deg);
+}
+
+.btn--primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+}
+
+.btn--primary:active {
+  transform: translateY(0);
+}
+
+.btn--secondary:hover {
+  background-color: var(--text-main);
+  color: var(--bg-primary);
+  transform: translateY(-2px);
+}
+
+.btn--secondary:active {
+  transform: translateY(0);
+}
+
+.category-btn:hover:not(.active) {
+  background-color: var(--bg-secondary);
+  border-color: var(--text-main);
+  color: var(--text-main);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.footer__link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.footer-links a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
