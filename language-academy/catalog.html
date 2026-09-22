@@ -1,13 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Language Academy - Catalog</title>
+  <title>Language Academy - Courses</title>
   <link rel="icon" type="image/png" href="./favicon.png">
   <link rel="stylesheet" href="./css/style.css">
+  <script>
+    const savedTheme = localStorage.getItem('app-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </head>
 <body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo">Language Academy</a>
+      
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="index.html#hero" class="header__nav-link">Home</a></li>
+          <li><a href="index.html#testimonials" class="header__nav-link">Stories</a></li>
+          <li><a href="index.html#benefits" class="header__nav-link">Why Us</a></li>
+          <li><a href="catalog.html" class="header__nav-link">Courses</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__controls">
+        <button id="theme-btn" class="theme-toggle" aria-label="Toggle display theme">
+          <span class="theme-toggle__icon"></span>
+        </button>
+        <button class="burger-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="burger-btn__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="catalog">
+      <div class="container catalog__container">
+        <h1 class="catalog__title">Explore Our <em>Language Courses</em></h1>
+
+        <div class="catalog__categories">
+          <button class="category-btn active" data-category="english">English Tiers</button>
+          <button class="category-btn" data-category="spanish">Spanish Tiers</button>
+          <button class="category-btn" data-category="japanese">Japanese Tiers</button>
+        </div>
+
+        <div class="catalog__grid">
+          <article class="card">
+            <div class="card__img-wrapper">
+              <img src="./assets/img/blank-image.jpg" alt="English Speaking Class Session">
+            </div>
+            <div class="card__content">
+              <span class="card__tag">English</span>
+              <h3 class="card__title">Conversational Fluency Core</h3>
+              <p class="card__desc">Overcome speaking blocks and master natural vocabulary through live scenario practice.</p>
+              <div class="card__footer">
+                <span class="card__price">$120 / mo</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img-wrapper">
+              <img src="./assets/img/blank-image.jpg" alt="Business English Presentation Study">
+            </div>
+            <div class="card__content">
+              <span class="card__tag">English</span>
+              <h3 class="card__title">Business Communication Pro</h3>
+              <p class="card__desc">Master formal email syntax, business negotiations, and high-impact international presentations.</p>
+              <div class="card__footer">
+                <span class="card__price">$180 / mo</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img-wrapper">
+              <img src="./assets/img/blank-image.jpg" alt="Grammar Intensive Writing Workshop">
+            </div>
+            <div class="card__content">
+              <span class="card__tag">English</span>
+              <h3 class="card__title">Advanced Grammar Intensive</h3>
+              <p class="card__desc">Deep dive into complex sentence structures, idioms, and advanced writing mechanics.</p>
+              <div class="card__footer">
+                <span class="card__price">$95 / mo</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img-wrapper">
+              <img src="./assets/img/blank-image.jpg" alt="IELTS Exam Preparation Class">
+            </div>
+            <div class="card__content">
+              <span class="card__tag">English</span>
+              <h3 class="card__title">IELTS / TOEFL Prep Masterclass</h3>
+              <p class="card__desc">Targeted test strategy systems focusing on maximizing speaking and academic writing scores.</p>
+              <div class="card__footer">
+                <span class="card__price">$210 / mo</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img-wrapper">
+              <img src="./assets/img/blank-image.jpg" alt="Spanish Beginner Class Circle">
+            </div>
+            <div class="card__content">
+              <span class="card__tag">Spanish</span>
+              <h3 class="card__title">Beginner Spanish Express</h3>
+              <p class="card__desc">Build a strong foundation with essential vocabulary, present tense rules, and common travel phrases.</p>
+              <div class="card__footer">
+                <span class="card__price">$110 / mo</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img-wrapper">
+              <img src="./assets/img/blank-image.jpg" alt="Intermediate Spanish Discussion Groups">
+            </div>
+            <div class="card__content">
+              <span class="card__tag">Spanish</span>
+              <h3 class="card__title">Intermediate Immersive Dialogue</h3>
+              <p class="card__desc">Expand your speaking fluidity by discussing Latin culture, film, literature, and news trends.</p>
+              <div class="card__footer">
+                <span class="card__price">$135 / mo</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img-wrapper">
+              <img src="./assets/img/blank-image.jpg" alt="Japanese Hiragana and Katakana Basics">
+            </div>
+            <div class="card__content">
+              <span class="card__tag">Japanese</span>
+              <h3 class="card__title">Kana & Foundations Mastery</h3>
+              <p class="card__desc">Learn Hiragana, Katakana, and basic sentence layout blocks with pristine pronunciation guides.</p>
+              <div class="card__footer">
+                <span class="card__price">$140 / mo</span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img-wrapper">
+              <img src="./assets/img/blank-image.jpg" alt="JLPT Test Prep Vocabulary Study">
+            </div>
+            <div class="card__content">
+              <span class="card__tag">Japanese</span>
+              <h3 class="card__title">JLPT Core Prep Track</h3>
+              <p class="card__desc">Accelerated vocabulary acquisition blueprints paired with strict Kanji reading techniques.</p>
+              <div class="card__footer">
+                <span class="card__price">$195 / mo</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <div class="catalog__pagination">
+          <button class="btn btn--secondary" id="load-more-btn">View More Tiers</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__info">
+        <h2 class="footer__title">Connect with admissions</h2>
+        <a href="tel:+1234567890" class="footer__link">Admissions: +1 (234) 567-890</a>
+        <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="footer__link">Main Campus: 456 Education Way</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/img/footer/github-logo.png" alt="GitHub">
+        </a>
+        <a href="https://rs.school" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/img/footer/rs-school-logo.png" alt="RS School Preschool">
+        </a>
+        <a href="https://rs.school" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/img/footer/rs-school-label.svg" alt="RS School JS Course">
+        </a>
+      </div>
+      <div class="footer-year">© 2026</div>
+    </div>
+  </footer>
   <script src="./js/theme.js"></script>
 </body>
 </html>
