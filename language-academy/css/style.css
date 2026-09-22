@@ -158,6 +158,10 @@ button {
   display: none;
 }
 
+.main {
+  display: block;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -218,7 +222,7 @@ button {
   text-align: center;
 }
 
-.slide__profile h3 {
+.slide__title {
   font-size: 22px;
   margin-bottom: 4px;
 }
