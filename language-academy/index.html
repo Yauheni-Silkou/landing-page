@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Academy - Home</title>
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script>
+    const savedTheme = localStorage.getItem('app-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo" aria-label="Language Academy Home">
+        <img src="./assets/img/logo.png" alt="Language Academy logo" class="header__logo-img">
+        <span class="header__logo-text">Language Academy</span>
+      </a>
+      
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li><a href="index.html#hero" class="header__nav-link">Home</a></li>
+          <li><a href="index.html#testimonials" class="header__nav-link">Stories</a></li>
+          <li><a href="index.html#benefits" class="header__nav-link">Why Us</a></li>
+          <li><a href="catalog.html" class="header__nav-link">Courses</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__controls">
+        <button id="theme-btn" class="theme-toggle" aria-label="Toggle display theme">
+          <svg class="theme-icon theme-icon--moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin='round'>
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon--sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="burger-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="burger-btn__line"></span>
+          <span class="burger-btn__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    
+    <section id="hero" class="section hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Master any language with native speakers</h1>
+          <p class="hero__description">Interactive schedules, immersive cultural exercises, and a global learning ecosystem built around your goals.</p>
+          <a href="catalog.html" class="btn btn--primary">Explore Courses</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section slider-section">
+      <div class="container slider-section__container">
+        <h2 class="section-title">What our <em>students</em> achieve</h2>
+        
+        <div class="slider">
+          <div class="slider__track">
+            <article class="slide active">
+              <div class="slide__profile">
+                <h3 class="slide__name">Sarah Jenkins</h3>
+                <span class="slide__meta">Passed IELTS Exam</span>
+              </div>
+              <p class="slide__text">"The immersive curriculum helped me jump standard blocks. The personalized lesson reviews built massive speech confidence!"</p>
+            </article>
+          </div>
+
+          <div class="slider__controls">
+            <button class="slider__arrow slider__arrow--prev" aria-label="Previous slide">&larr;</button>
+            <div class="slider__pagination">
+              <span class="slider__dot active"></span>
+              <span class="slider__dot"></span>
+              <span class="slider__dot"></span>
+            </div>
+            <button class="slider__arrow slider__arrow--next" aria-label="Next slide">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section benefits">
+      <div class="container benefits__container">
+        <h2 class="section-title">Our Immersive <em>Methodology</em></h2>
+        <p class="benefits__text">We don't force raw grammar memorization. Our active speech protocols prioritize conversational fluidity from day one.</p>
+        
+        <div class="benefits__grid">
+          <div class="feature-card">
+            <h3>Active Speaking</h3>
+            <p>Prioritize real conversational fluidity from day one over boring textbook drills.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Native Experts</h3>
+            <p>Learn authentic regional idioms and accent structures directly from certified global educators.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Flexible Pacing</h3>
+            <p>Tailor your immersive calendar schedules around intensive bootcamps or relaxed evening logs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="section stats">
+      <div class="container stats__container">
+        <h2 class="section-title">Global <em>Footprint</em></h2>
+        <p class="stats__text">Over 15,000 active students, 40+ corporate business partners, and standard remote hubs available across all standard time zones.</p>
+        
+        <div class="stats__grid">
+          <div class="feature-card">
+            <h3>15k+</h3>
+            <p>Active international students currently studying across learning tracks.</p>
+          </div>
+          <div class="feature-card">
+            <h3>40+</h3>
+            <p>Corporate business enterprise language tracking partners globally.</p>
+          </div>
+          <div class="feature-card">
+            <h3>24/7</h3>
+            <p>Live digital group conversation classrooms accessible across all world time zones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__info">
+        <h2 class="footer__title">Connect with admissions</h2>
+        <a href="tel:+1234567890" class="footer__link">Admissions: +1 (234) 567-890</a>
+        <a href="https://www.google.com/maps/place/Big+Ben/@51.5007325,-0.1272003,17z/data=!3m2!4b1!5s0x47d8e55e300273ad:0x64ade3f4995c75cd!4m6!3m5!1s0x487604c38c8cd1d9:0xb78f2474b9a45aa9!8m2!3d51.5007292!4d-0.1246254!16zL20vMDI2eWRj?entry=ttu&g_ep=EgoyMDI2MDkyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="footer__link">Main Campus: 456 Education Way</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Yauheni-Silkou" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/img/footer/github-logo.png" alt="GitHub">
+        </a>
+        <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/img/footer/rs-school-logo.png" alt="RS School Preschool">
+        </a>
+        <a href="https://rs.school/courses/javascript" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/img/footer/rs-school-label.svg" alt="RS School JS Course">
+        </a>
+      </div>
+      
+      <div class="footer-year">© 2026</div>
+    </div>
+  </footer>
+  <script src="./js/theme.js"></script>
+</body>
+</html>
