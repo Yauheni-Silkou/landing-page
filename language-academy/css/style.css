@@ -577,3 +577,148 @@ button {
   transform: scale(1.1);
   opacity: 0.8;
 }
+
+/* --- 9. RESPONSIVE MEDIA BREAKPOINTS (OVERLAP-PROOF FIXED MATRIX) --- */
+
+@media (max-width: 1200px) {
+  .catalog__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container { 
+    padding: 0 24px; 
+  }
+  
+  .header__container { 
+    height: 80px; 
+  }
+  
+  .header__nav { 
+    display: none; 
+  }
+  
+  .header__controls {
+    gap: 16px;
+  }
+
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+  }
+
+  .burger-btn__line {
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-main);
+    border-radius: 2px;
+    display: block;
+  }
+
+  .section { 
+    padding: 60px 0; 
+  }
+  
+  .hero {
+    background-image: url("../assets/img/hero-bg-light.webp");
+    background-position: center bottom;
+    background-size: cover;
+    padding-bottom: 340px;
+    min-height: auto;
+  }
+  
+  [data-theme="dark"] .hero {
+    background-image: url("../assets/img/hero-bg-dark.webp");
+  }
+  
+  .hero__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .hero__content { 
+    max-width: 100%; 
+    margin: 0 auto;
+  }
+  
+  .hero__title { 
+    font-size: 38px; 
+  }
+  
+  .benefits__grid, 
+  .stats__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .feature-card {
+    width: 100%;
+    border-left: 4px solid var(--accent-color);
+  }
+  
+  .catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+  
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .footer__info { 
+    align-items: center; 
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container { 
+    padding: 0 16px; 
+  }
+  
+  .hero__title { 
+    font-size: 32px; 
+  }
+  
+  .hero__description { 
+    font-size: 16px; 
+  }
+  
+  .section-title { 
+    font-size: 28px; 
+  }
+  
+  .catalog__categories {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .category-btn { 
+    width: 100%; 
+    text-align: center; 
+  }
+
+  .slide { 
+    padding: 24px 16px; 
+  }
+  
+  .slide__text { 
+    font-size: 16px; 
+  }
+}
