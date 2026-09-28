@@ -51,3 +51,13 @@
   - [x] Контактные и внешние ссылки выполняют ожидаемое действие (2)
   - [x] Ссылки, кнопки и карточки имеют состояние hover (2)
   - [x] Изменение внешнего вида элементов происходит плавно и не влияет на положение соседних элементов (1)
+
+---
+
+## 2.1. Task: [Landing Page. Часть 2: Функциональность](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/landing-page/README-part-2.md)
+## 2.2. Screenshot:
+[img]
+
+## 2.3. Deployment: https://yauheni-silkou.github.io/landing-page/language-academy/index.html
+## 2.4. Done 29.09.2026 / deadline 29.09.2026
+## 2.5. Score: 100 / 100
