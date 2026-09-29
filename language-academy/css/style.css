@@ -364,6 +364,105 @@ button {
   background-color: var(--accent-color);
 }
 
+.banner-divider-1,
+.banner-divider-2 {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1440px auto;
+  transition: background-image var(--transition-speed) ease, height var(--transition-speed) ease;
+}
+
+.banner-divider-1 {
+  background-image: linear-gradient(to right, 
+                      var(--bg-primary) calc(50% - 720px), 
+                      transparent calc(50% - 600px), 
+                      transparent calc(50% + 600px), 
+                      var(--bg-primary) calc(50% + 720px)),
+                    url("../assets/img/photo-divider-1.webp");
+}
+
+[data-theme="dark"] .banner-divider-1 {
+  background-image: linear-gradient(to right, 
+                      var(--bg-primary) calc(50% - 720px), 
+                      rgba(18, 18, 18, 0.35) calc(50% - 600px), 
+                      rgba(18, 18, 18, 0.35) calc(50% + 600px), 
+                      var(--bg-primary) calc(50% + 720px)),
+                    url("../assets/img/photo-divider-1.webp");
+}
+
+.banner-divider-2 {
+  background-image: linear-gradient(to right, 
+                      var(--bg-primary) calc(50% - 720px), 
+                      transparent calc(50% - 600px), 
+                      transparent calc(50% + 600px), 
+                      var(--bg-primary) calc(50% + 720px)),
+                    url("../assets/img/photo-divider-2.webp");
+}
+
+[data-theme="dark"] .banner-divider-2 {
+  background-image: linear-gradient(to right, 
+                      var(--bg-primary) calc(50% - 720px), 
+                      rgba(18, 18, 18, 0.35) calc(50% - 600px), 
+                      rgba(18, 18, 18, 0.35) calc(50% + 600px), 
+                      var(--bg-primary) calc(50% + 720px)),
+                    url("../assets/img/photo-divider-2.webp");
+}
+
+
+@media (max-width: 768px) {
+  .banner-divider-1,
+  .banner-divider-2 {
+    height: 200px;
+    background-size: 720px auto;
+  }
+
+  .banner-divider-1 {
+    background-image: linear-gradient(to right, 
+                        var(--bg-primary) calc(50% - 360px), 
+                        transparent calc(50% - 300px), 
+                        transparent calc(50% + 300px), 
+                        var(--bg-primary) calc(50% + 360px)),
+                      url("../assets/img/photo-divider-1.webp");
+  }
+
+  [data-theme="dark"] .banner-divider-1 {
+    background-image: linear-gradient(to right, 
+                        var(--bg-primary) calc(50% - 360px), 
+                        rgba(18, 18, 18, 0.35) calc(50% - 300px), 
+                        rgba(18, 18, 18, 0.35) calc(50% + 300px), 
+                        var(--bg-primary) calc(50% + 360px)),
+                      url("../assets/img/photo-divider-1.webp");
+  }
+
+  .banner-divider-2 {
+    background-image: linear-gradient(to right, 
+                        var(--bg-primary) calc(50% - 360px), 
+                        transparent calc(50% - 300px), 
+                        transparent calc(50% + 300px), 
+                        var(--bg-primary) calc(50% + 360px)),
+                      url("../assets/img/photo-divider-2.webp");
+  }
+
+  [data-theme="dark"] .banner-divider-2 {
+    background-image: linear-gradient(to right, 
+                        var(--bg-primary) calc(50% - 360px), 
+                        rgba(18, 18, 18, 0.35) calc(50% - 300px), 
+                        rgba(18, 18, 18, 0.35) calc(50% + 300px), 
+                        var(--bg-primary) calc(50% + 360px)),
+                      url("../assets/img/photo-divider-2.webp");
+  }
+}
+
+@media (max-width: 380px) {
+  .banner-divider-1,
+  .banner-divider-2 {
+    height: 120px;
+  }
+}
+
 .benefits__text, .stats__text {
   text-align: center;
   max-width: 700px;
