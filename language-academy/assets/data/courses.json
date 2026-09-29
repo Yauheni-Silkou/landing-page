@@ -1,0 +1,148 @@
+{
+  "courses": [
+    {
+      "id": "eng-1",
+      "name": "Conversational Fluency Core",
+      "description": "Overcome speaking blocks and master natural vocabulary through live scenario practice.",
+      "price": 120,
+      "image": "./assets/img/cards/image01.jpg",
+      "category": "english",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "eng-2",
+      "name": "Business Communication Pro",
+      "description": "Master formal email syntax, business negotiations, and high-impact international presentations.",
+      "price": 180,
+      "image": "./assets/img/cards/image02.jpg",
+      "category": "english",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "eng-3",
+      "name": "Advanced Grammar Intensive",
+      "description": "Deep dive into complex sentence structures, idioms, and advanced writing mechanics.",
+      "price": 95,
+      "image": "./assets/img/cards/image03.jpg",
+      "category": "english",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "eng-4",
+      "name": "IELTS / TOEFL Prep Masterclass",
+      "description": "Targeted test strategy systems focusing on maximizing speaking and academic writing scores.",
+      "price": 210,
+      "image": "./assets/img/cards/image04.jpg",
+      "category": "english",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "eng-5",
+      "name": "Accent Reduction & Phonetics",
+      "description": "Isolate difficult vowel sounds, master sentence stress, and sound natural when speaking fluidly.",
+      "price": 115,
+      "image": "./assets/img/cards/image05.jpg",
+      "category": "english",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "eng-6",
+      "name": "Academic Essay Composition",
+      "description": "Formulate compelling arguments, research citations, and pass high-tier college entrance writing checks.",
+      "price": 150,
+      "image": "./assets/img/cards/image06.jpg",
+      "category": "english",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "eng-7",
+      "name": "Lexical Expansion Blueprint",
+      "description": "Accelerate word acquisition by learning common prefixes, roots, and advanced idiomatic expressions.",
+      "price": 85,
+      "image": "./assets/img/cards/image07.jpg",
+      "category": "english",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "eng-8",
+      "name": "Literature & Analytical Debate",
+      "description": "Read classic prose selections and build deep critique skills through unscripted classroom debate forums.",
+      "price": 130,
+      "image": "./assets/img/cards/image08.jpg",
+      "category": "english",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "esp-1",
+      "name": "Beginner Spanish Express",
+      "description": "Build a strong foundation with essential vocabulary, present tense rules, and common travel phrases.",
+      "price": 110,
+      "image": "./assets/img/cards/image09.jpg",
+      "category": "spanish",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "esp-2",
+      "name": "Intermediate Immersive Dialogue",
+      "description": "Expand your speaking fluidity by discussing Latin culture, film, literature, and news trends.",
+      "price": 135,
+      "image": "./assets/img/cards/image10.jpg",
+      "category": "spanish",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "jap-1",
+      "name": "Kana & Foundations Mastery",
+      "description": "Learn Hiragana, Katakana, and basic sentence layout blocks with pristine pronunciation guides.",
+      "price": 140,
+      "image": "./assets/img/cards/image11.jpg",
+      "category": "japanese",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    },
+    {
+      "id": "jap-2",
+      "name": "JLPT Core Prep Track",
+      "description": "Accelerated vocabulary acquisition blueprints paired with strict Kanji reading techniques.",
+      "price": 195,
+      "image": "./assets/img/cards/image12.jpg",
+      "category": "japanese",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+      }
+    }
+  ]
+}
