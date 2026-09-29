@@ -7,6 +7,8 @@
       "price": 120,
       "image": "./assets/img/cards/image01.jpg",
       "category": "english",
+      "duration": "8 Weeks",
+      "prerequisites": "Basic A2 Level or equivalent",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -19,6 +21,8 @@
       "price": 180,
       "image": "./assets/img/cards/image02.jpg",
       "category": "english",
+      "duration": "12 Weeks",
+      "prerequisites": "Intermediate B1 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -31,6 +35,8 @@
       "price": 95,
       "image": "./assets/img/cards/image03.jpg",
       "category": "english",
+      "duration": "6 Weeks",
+      "prerequisites": "Intermediate B2 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -43,6 +49,8 @@
       "price": 210,
       "image": "./assets/img/cards/image04.jpg",
       "category": "english",
+      "duration": "10 Weeks",
+      "prerequisites": "Upper-Intermediate B2 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -55,6 +63,8 @@
       "price": 115,
       "image": "./assets/img/cards/image05.jpg",
       "category": "english",
+      "duration": "4 Weeks",
+      "prerequisites": "Any level above A2",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -67,6 +77,8 @@
       "price": 150,
       "image": "./assets/img/cards/image06.jpg",
       "category": "english",
+      "duration": "8 Weeks",
+      "prerequisites": "Advanced C1 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -79,6 +91,8 @@
       "price": 85,
       "image": "./assets/img/cards/image07.jpg",
       "category": "english",
+      "duration": "6 Weeks",
+      "prerequisites": "Intermediate B1 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -91,6 +105,8 @@
       "price": 130,
       "image": "./assets/img/cards/image08.jpg",
       "category": "english",
+      "duration": "12 Weeks",
+      "prerequisites": "Advanced C1 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -103,6 +119,8 @@
       "price": 110,
       "image": "./assets/img/cards/image09.jpg",
       "category": "spanish",
+      "duration": "8 Weeks",
+      "prerequisites": "Absolute Beginner (A0/A1)",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -115,6 +133,8 @@
       "price": 135,
       "image": "./assets/img/cards/image10.jpg",
       "category": "spanish",
+      "duration": "10 Weeks",
+      "prerequisites": "Lower-Intermediate A2 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -127,6 +147,8 @@
       "price": 140,
       "image": "./assets/img/cards/image11.jpg",
       "category": "japanese",
+      "duration": "6 Weeks",
+      "prerequisites": "Absolute Beginner (No prior study)",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
@@ -139,6 +161,8 @@
       "price": 195,
       "image": "./assets/img/cards/image12.jpg",
       "category": "japanese",
+      "duration": "16 Weeks",
+      "prerequisites": "Intermediate N4/N3 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }

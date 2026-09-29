@@ -746,3 +746,117 @@ button {
     font-size: 16px; 
   }
 }
+
+/* --- 10. INTERACTIVE CENTRAL MODAL SHELL STYLES --- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-speed) ease-in-out;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-container {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  width: 90%;
+  max-width: 650px;
+  padding: 40px;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.modal-overlay.open .modal-container {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--text-muted);
+  transition: color var(--transition-speed) ease;
+}
+
+.modal-close:hover {
+  color: var(--text-main);
+}
+
+.modal-body-wrapper {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.modal__img-wrapper img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.modal__details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal__meta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: var(--bg-secondary);
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.modal__meta-item strong {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+.modal-body-wrapper {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .modal__img-wrapper img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.modal-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+}
