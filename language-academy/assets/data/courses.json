@@ -10,8 +10,8 @@
       "duration": "8 Weeks",
       "prerequisites": "Basic A2 Level or equivalent",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 40 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 65 }
       }
     },
     {
@@ -24,8 +24,8 @@
       "duration": "12 Weeks",
       "prerequisites": "Intermediate B1 Level",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 60 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 90 }
       }
     },
     {
@@ -38,8 +38,8 @@
       "duration": "6 Weeks",
       "prerequisites": "Intermediate B2 Level",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 30 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 50 }
       }
     },
     {
@@ -52,8 +52,8 @@
       "duration": "10 Weeks",
       "prerequisites": "Upper-Intermediate B2 Level",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 75 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 110 }
       }
     },
     {
@@ -66,8 +66,8 @@
       "duration": "4 Weeks",
       "prerequisites": "Any level above A2",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 35 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 60 }
       }
     },
     {
@@ -80,8 +80,8 @@
       "duration": "8 Weeks",
       "prerequisites": "Advanced C1 Level",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 50 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 80 }
       }
     },
     {
@@ -94,8 +94,8 @@
       "duration": "6 Weeks",
       "prerequisites": "Intermediate B1 Level",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 25 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 45 }
       }
     },
     {
@@ -108,8 +108,8 @@
       "duration": "12 Weeks",
       "prerequisites": "Advanced C1 Level",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 45 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 70 }
       }
     },
     {
@@ -122,8 +122,8 @@
       "duration": "8 Weeks",
       "prerequisites": "Absolute Beginner (A0/A1)",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 35 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 55 }
       }
     },
     {
@@ -136,8 +136,8 @@
       "duration": "10 Weeks",
       "prerequisites": "Lower-Intermediate A2 Level",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 40 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 65 }
       }
     },
     {
@@ -150,8 +150,8 @@
       "duration": "6 Weeks",
       "prerequisites": "Absolute Beginner (No prior study)",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 45 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 75 }
       }
     },
     {
@@ -164,8 +164,8 @@
       "duration": "16 Weeks",
       "prerequisites": "Intermediate N4/N3 Level",
       "parameters": {
-        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp (+$50)" },
-        "format": { "group": "Group Sessions", "private": "1-on-1 Private (+$80)" }
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 65 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 95 }
       }
     }
   ]

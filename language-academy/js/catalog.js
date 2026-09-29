@@ -71,6 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const course = allCourses.find(item => item.id === courseId);
     if (!course) return;
 
+    let basePrice = course.price;
+    let intensityModifier = 0;
+    let formatModifier = 0;
+
     modalDynamicContent.innerHTML = `
       <div class="modal-body-wrapper">
         <div class="modal__img-wrapper">
@@ -79,29 +83,78 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="modal__details">
           <span class="modal-title">${course.name}</span>
           <p class="modal-desc">${course.description}</p>
-          
+
           <div class="modal__meta-group">
             <span class="modal__meta-item"><strong>Duration:</strong> ${course.duration}</span>
             <span class="modal__meta-item"><strong>Prerequisites:</strong> ${course.prerequisites}</span>
           </div>
-          <div class="modal-footer-info" style="font-size: 24px; font-weight:700; margin-top:10px;">
-            Total Tuition: <span id="modal-total-price">$${course.price}</span> / mo
+
+          <div class="modal__options-group">
+            <span class="modal__options-label">Select Intensity:</span>
+            <div class="modal__options-row" id="intensity-row">
+              <button class="modal__option-btn active" data-mod="0">${course.parameters.intensity.name}</button>
+              <button class="modal__option-btn" data-mod="${course.parameters.intensity.int_price}">${course.parameters.intensity.intensive} (+$${course.parameters.intensity.int_price})</button>
+            </div>
+          </div>
+
+          <div class="modal__options-group">
+            <span class="modal__options-label">Select Format:</span>
+            <div class="modal__options-row" id="format-row">
+              <button class="modal__option-btn active" data-mod="0">${course.parameters.format.group}</button>
+              <button class="modal__option-btn" data-mod="${course.parameters.format.priv_price}">${course.parameters.format.private} (+$${course.parameters.format.priv_price})</button>
+            </div>
+          </div>
+
+          <div class="modal-footer-info" style="font-size: 24px; font-weight:700; margin-top:16px; border-top: 1px dashed var(--btn-border); padding-top:16px;">
+            Total Tuition: <span id="modal-total-price">$${basePrice}</span> / mo
           </div>
         </div>
       </div>
     `;
 
+    const totalPriceSpan = document.getElementById('modal-total-price');
+    const intensityButtons = document.querySelectorAll('#intensity-row .modal__option-btn');
+    const formatButtons = document.querySelectorAll('#format-row .modal__option-btn');
+
+    function updateTotalPrice() {
+      const liveTotal = basePrice + intensityModifier + formatModifier;
+      totalPriceSpan.textContent = `$${liveTotal}`;
+    }
+
+    intensityButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        intensityButtons.forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+
+        intensityModifier = parseInt(e.currentTarget.getAttribute('data-mod'), 10);
+        updateTotalPrice();
+      });
+    });
+
+    formatButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        formatButtons.forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+
+        formatModifier = parseInt(e.currentTarget.getAttribute('data-mod'), 10);
+        updateTotalPrice();
+      });
+    });
+
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    
+    document.documentElement.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
+    
     document.body.style.paddingRight = `${scrollbarWidth}px`;
 
     modalOverlay.classList.add('open');
-    modalOverlay.setAttribute('aria-hidden', 'false');
   }
 
   function closeModal() {
     modalOverlay.classList.remove('open');
-    modalOverlay.setAttribute('aria-hidden', 'true');
+    
+    document.documentElement.style.overflow = '';
     document.body.style.overflow = '';
     document.body.style.paddingRight = '';
   }

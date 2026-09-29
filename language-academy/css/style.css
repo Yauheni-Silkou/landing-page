@@ -820,7 +820,7 @@ button {
 .modal__details {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .modal__meta-group {
@@ -838,17 +838,24 @@ button {
 }
 
 @media (max-width: 768px) {
-.modal-body-wrapper {
+  .modal-body-wrapper {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 14px;
     justify-items: center;
   }
 
   .modal__img-wrapper img {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
   }
 }
+
+@media (max-width: 480px) {
+  .modal__img-wrapper img {
+    display: none;
+  }
+}
+
 
 .modal-title {
   font-size: 28px;
@@ -859,4 +866,52 @@ button {
 .modal-desc {
   font-size: 15px;
   color: var(--text-muted);
+}
+
+/* --- 11. INTERACTIVE MODAL PARAMETER OPTIONS STYLES --- */
+
+.modal__options-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.modal__options-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.modal__options-row {
+  display: flex;
+  flex-direction: column; /* FORCES CLEAN VERTICAL BUTTON STACK ALIGNMENT */
+  gap: 10px;
+  align-items: flex-start; /* Aligns buttons neatly to the left side */
+}
+
+.modal__option-btn {
+  padding: 6px 20px;
+  border: 1px solid var(--btn-border);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-main);
+  background-color: transparent;
+  width: 100%;            /* Allows buttons to cleanly fill container space visually */
+  max-width: 320px;       /* Keeps them perfectly proportioned and bounded */
+  text-align: left;       /* Left-aligns typography content for vertical menu stacks */
+  transition: all var(--transition-speed) ease;
+}
+
+.modal__option-btn.active {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+.modal__option-btn:hover:not(.active) {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
