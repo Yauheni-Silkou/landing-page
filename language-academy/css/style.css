@@ -1,4 +1,5 @@
 /* --- 1. THEME DESIGN PALETTE MATRIX --- */
+
 :root {
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
@@ -7,6 +8,7 @@
   --btn-border: #6c757d;
   --accent-color: #0d6efd;
   --accent-hover: #0b5ed7;
+  --card-hover: #c4dff5;
   --transition-speed: 0.3s;
 }
 
@@ -18,9 +20,11 @@
   --btn-border: #ffffff;
   --accent-color: #3985ff;
   --accent-hover: #5495ff;
+  --card-hover: #041c42;
 }
 
 /* --- 2. UNIVERSAL LAYOUT RESETS --- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -67,6 +71,7 @@ button {
 }
 
 /* --- 3. HEADER LAYOUT STYLES --- */
+
 .header {
   position: sticky;
   top: 0;
@@ -119,6 +124,7 @@ button {
 }
 
 /* --- 4. INLINE SVG THEME TOGGLE CONTROL --- */
+
 .theme-toggle {
   width: 44px;
   height: 44px;
@@ -142,6 +148,7 @@ button {
 [data-theme="dark"] .theme-icon--sun { display: block; }
 
 /* --- 5. MAIN CONTENT LAYOUT BLOCKS --- */
+
 .main {
   display: block;
 }
@@ -191,7 +198,7 @@ button {
 
 .hero {
   width: 100%;
-  min-height: 600px;
+  height: 600px;
   display: flex;
   align-items: center;
   position: relative;
@@ -271,6 +278,7 @@ button {
 .slider__track {
   display: flex;
   width: 100%;
+  list-style-type: none;
   transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -388,6 +396,7 @@ button {
 }
 
 /* --- 6. CATALOG PAGES CARD GRID --- */
+
 .catalog {
   padding: 60px 0 100px;
 }
@@ -480,6 +489,7 @@ button {
 }
 
 /* --- 7. UNIFORM INTEGRATED FOOTER --- */
+
 .footer {
   background-color: var(--bg-secondary);
   padding: 40px 0;
@@ -527,8 +537,10 @@ button {
 }
 
 /* --- 8. HOVER TRANSFORMATIONS --- */
+
 .header__nav-link,
 .theme-toggle,
+.burger-toggle,
 .btn,
 .category-btn,
 .card,
@@ -546,12 +558,18 @@ button {
   opacity: 0.85;
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover,
+.burger-toggle:hover {
   background-color: var(--text-main);
 }
+
 .theme-toggle:hover .theme-icon {
   color: var(--bg-primary);
   transform: rotate(15deg);
+}
+
+.burger-toggle:hover .burger-btn__line {
+  background-color: var(--bg-primary);
 }
 
 .btn--primary:hover {
@@ -578,6 +596,7 @@ button {
 }
 
 .card:hover {
+  background-color: var(--card-hover);
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
@@ -649,6 +668,8 @@ button {
     gap: 6px;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
     align-items: center;
     transition: transform 0.25s var(--transition-speed) ease;
   }
@@ -669,16 +690,11 @@ button {
   .burger-btn.open .burger-btn__line:nth-child(2) {
     transform: translateY(-4px) rotate(-45deg);
   }
-
-  .section { 
-    padding: 60px 0; 
-  }
   
   .hero {
     background-image: url("../assets/img/hero-bg-light.webp");
     background-position: center bottom;
     background-size: cover;
-    padding-bottom: 340px;
     min-height: auto;
   }
   
@@ -877,9 +893,9 @@ button {
 
 .modal__options-row {
   display: flex;
-  flex-direction: column; /* FORCES CLEAN VERTICAL BUTTON STACK ALIGNMENT */
+  flex-direction: column;
   gap: 10px;
-  align-items: flex-start; /* Aligns buttons neatly to the left side */
+  align-items: flex-start;
 }
 
 .modal__option-btn {
@@ -890,9 +906,9 @@ button {
   font-weight: 500;
   color: var(--text-main);
   background-color: transparent;
-  width: 100%;            /* Allows buttons to cleanly fill container space visually */
-  max-width: 320px;       /* Keeps them perfectly proportioned and bounded */
-  text-align: left;       /* Left-aligns typography content for vertical menu stacks */
+  width: 100%;
+  max-width: 320px;
+  text-align: left;
   transition: all var(--transition-speed) ease;
 }
 
