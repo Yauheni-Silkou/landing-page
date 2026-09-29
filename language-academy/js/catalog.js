@@ -1,22 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
   const cardGrid = document.querySelector('.catalog__grid');
   const categoryButtons = document.querySelectorAll('.category-btn');
+  const loadMoreBtn = document.getElementById('load-more-btn');
+  const paginationWrapper = document.querySelector('.catalog__pagination');
   
   if (!cardGrid) return;
 
   let allCourses = [];
   let activeCategory = 'english';
+  let isExpanded = false;
 
   async function loadCoursesData() {
     try {
       const response = await fetch('./assets/data/courses.json');
-      if (!response.ok) throw new Error('Network response was not ok');
+      if (!response.ok) throw new Error('Network file access error');
       const data = await response.json();
       allCourses = data.courses;
       
       renderCatalog();
+      window.addEventListener('resize', handleWindowResize);
     } catch (error) {
-      console.error('Failed to load catalog courses data:', error);
+      console.error('Failed to parse catalog records:', error);
       cardGrid.innerHTML = `<p class="error-msg">Failed to load courses. Please try again later.</p>`;
     }
   }
@@ -25,8 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
     cardGrid.innerHTML = '';
 
     const filteredCourses = allCourses.filter(course => course.category === activeCategory);
+    const windowWidth = window.innerWidth;
 
-    filteredCourses.forEach(course => {
+    const shouldLimit = windowWidth <= 768 && !isExpanded;
+    const cardsToDisplay = shouldLimit ? filteredCourses.slice(0, 4) : filteredCourses;
+
+    cardsToDisplay.forEach(course => {
       const cardArticle = document.createElement('article');
       cardArticle.classList.add('card');
       cardArticle.setAttribute('data-id', course.id);
@@ -47,21 +55,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
       cardGrid.appendChild(cardArticle);
     });
+
+    if (windowWidth <= 768 && filteredCourses.length > 4 && !isExpanded) {
+      paginationWrapper.style.display = 'flex';
+    } else {
+      paginationWrapper.style.display = 'none';
+    }
+  }
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      isExpanded = true;
+      renderCatalog();
+    });
   }
 
   categoryButtons.forEach(button => {
     button.addEventListener('click', (e) => {
       const targetCategory = e.currentTarget.getAttribute('data-category');
-      
+
       if (activeCategory === targetCategory) return;
 
       categoryButtons.forEach(btn => btn.classList.remove('active'));
       e.currentTarget.classList.add('active');
 
       activeCategory = targetCategory;
+      isExpanded = false; 
       renderCatalog();
     });
   });
+
+  function handleWindowResize() {
+    renderCatalog();
+  }
 
   loadCoursesData();
 });
