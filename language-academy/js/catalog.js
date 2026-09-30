@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       cardArticle.innerHTML = `
         <div class="card__img-wrapper">
-          <img src="${course.image}" alt="${course.name}">
+          <img src="${course.image}" alt="${course.name}" loading="lazy">
         </div>
         <div class="card__content">
           <span class="card__tag">${course.category}</span>
