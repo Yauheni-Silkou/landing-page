@@ -5,7 +5,7 @@
       "name": "Conversational Fluency Core",
       "description": "Overcome speaking blocks and master natural vocabulary through live scenario practice.",
       "price": 120,
-      "image": "./assets/img/cards/image01.jpg",
+      "image": "./assets/img/cards/eng-1.jpg",
       "category": "english",
       "duration": "8 Weeks",
       "prerequisites": "Basic A2 Level or equivalent",
@@ -19,7 +19,7 @@
       "name": "Business Communication Pro",
       "description": "Master formal email syntax, business negotiations, and high-impact international presentations.",
       "price": 180,
-      "image": "./assets/img/cards/image02.jpg",
+      "image": "./assets/img/cards/eng-2.jpg",
       "category": "english",
       "duration": "12 Weeks",
       "prerequisites": "Intermediate B1 Level",
@@ -33,7 +33,7 @@
       "name": "Advanced Grammar Intensive",
       "description": "Deep dive into complex sentence structures, idioms, and advanced writing mechanics.",
       "price": 95,
-      "image": "./assets/img/cards/image03.jpg",
+      "image": "./assets/img/cards/eng-3.jpg",
       "category": "english",
       "duration": "6 Weeks",
       "prerequisites": "Intermediate B2 Level",
@@ -47,7 +47,7 @@
       "name": "IELTS / TOEFL Prep Masterclass",
       "description": "Targeted test strategy systems focusing on maximizing speaking and academic writing scores.",
       "price": 210,
-      "image": "./assets/img/cards/image04.jpg",
+      "image": "./assets/img/cards/eng-4.jpg",
       "category": "english",
       "duration": "10 Weeks",
       "prerequisites": "Upper-Intermediate B2 Level",
@@ -61,7 +61,7 @@
       "name": "Accent Reduction & Phonetics",
       "description": "Isolate difficult vowel sounds, master sentence stress, and sound natural when speaking fluidly.",
       "price": 115,
-      "image": "./assets/img/cards/image05.jpg",
+      "image": "./assets/img/cards/eng-5.jpg",
       "category": "english",
       "duration": "4 Weeks",
       "prerequisites": "Any level above A2",
@@ -75,7 +75,7 @@
       "name": "Academic Essay Composition",
       "description": "Formulate compelling arguments, research citations, and pass high-tier college entrance writing checks.",
       "price": 150,
-      "image": "./assets/img/cards/image06.jpg",
+      "image": "./assets/img/cards/eng-6.jpg",
       "category": "english",
       "duration": "8 Weeks",
       "prerequisites": "Advanced C1 Level",
@@ -89,7 +89,7 @@
       "name": "Lexical Expansion Blueprint",
       "description": "Accelerate word acquisition by learning common prefixes, roots, and advanced idiomatic expressions.",
       "price": 85,
-      "image": "./assets/img/cards/image07.jpg",
+      "image": "./assets/img/cards/eng-7.jpg",
       "category": "english",
       "duration": "6 Weeks",
       "prerequisites": "Intermediate B1 Level",
@@ -103,7 +103,7 @@
       "name": "Literature & Analytical Debate",
       "description": "Read classic prose selections and build deep critique skills through unscripted classroom debate forums.",
       "price": 130,
-      "image": "./assets/img/cards/image08.jpg",
+      "image": "./assets/img/cards/eng-8.jpg",
       "category": "english",
       "duration": "12 Weeks",
       "prerequisites": "Advanced C1 Level",
@@ -117,7 +117,7 @@
       "name": "Beginner Spanish Express",
       "description": "Build a strong foundation with essential vocabulary, present tense rules, and common travel phrases.",
       "price": 110,
-      "image": "./assets/img/cards/image09.jpg",
+      "image": "./assets/img/cards/esp-1.jpg",
       "category": "spanish",
       "duration": "8 Weeks",
       "prerequisites": "Absolute Beginner (A0/A1)",
@@ -131,10 +131,94 @@
       "name": "Intermediate Immersive Dialogue",
       "description": "Expand your speaking fluidity by discussing Latin culture, film, literature, and news trends.",
       "price": 135,
-      "image": "./assets/img/cards/image10.jpg",
+      "image": "./assets/img/cards/esp-2.jpg",
       "category": "spanish",
       "duration": "10 Weeks",
       "prerequisites": "Lower-Intermediate A2 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 40 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 65 }
+      }
+    },
+    {
+      "id": "esp-3",
+      "name": "Spanish Grammar Foundations",
+      "description": "Master past tenses, gender agreements, and sentence flow structures with interactive modules.",
+      "price": 95,
+      "image": "./assets/img/cards/esp-3.jpg",
+      "category": "spanish",
+      "duration": "6 Weeks",
+      "prerequisites": "Beginner A1 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 30 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 50 }
+      }
+    },
+    {
+      "id": "esp-4",
+      "name": "DELE Exam Masterclass",
+      "description": "Targeted strategies focusing on maximizing speaking accuracy and writing evaluation benchmarks.",
+      "price": 200,
+      "image": "./assets/img/cards/esp-4.jpg",
+      "category": "spanish",
+      "duration": "12 Weeks",
+      "prerequisites": "Intermediate B1 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 70 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 100 }
+      }
+    },
+    {
+      "id": "esp-5",
+      "name": "Medical & Professional Spanish",
+      "description": "Essential terminology matrices for healthcare practitioners, terminology structures, and consultations.",
+      "price": 160,
+      "image": "./assets/img/cards/esp-5.jpg",
+      "category": "spanish",
+      "duration": "8 Weeks",
+      "prerequisites": "Intermediate B1 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 55 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 85 }
+      }
+    },
+    {
+      "id": "esp-6",
+      "name": "Castilian Pronunciation Core",
+      "description": "Isolate unique phonetics, master speech flow, and sound natural when speaking fluidly.",
+      "price": 105,
+      "image": "./assets/img/cards/esp-6.jpg",
+      "category": "spanish",
+      "duration": "4 Weeks",
+      "prerequisites": "Any level above A1",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 35 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 55 }
+      }
+    },
+    {
+      "id": "esp-7",
+      "name": "Commercial Corporate Spanish",
+      "description": "Master sales terminology, negotiation mechanics, and international business syntax standards.",
+      "price": 175,
+      "image": "./assets/img/cards/esp-7.jpg",
+      "category": "spanish",
+      "duration": "10 Weeks",
+      "prerequisites": "Intermediate B2 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 60 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 90 }
+      }
+    },
+    {
+      "id": "esp-8",
+      "name": "Cinema & Contemporary Critique",
+      "description": "Analyze classic cinematic pieces and build advanced analytical discussion frameworks.",
+      "price": 125,
+      "image": "./assets/img/cards/esp-8.jpg",
+      "category": "spanish",
+      "duration": "8 Weeks",
+      "prerequisites": "Advanced C1 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 40 },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 65 }
@@ -145,7 +229,7 @@
       "name": "Kana & Foundations Mastery",
       "description": "Learn Hiragana, Katakana, and basic sentence layout blocks with pristine pronunciation guides.",
       "price": 140,
-      "image": "./assets/img/cards/image11.jpg",
+      "image": "./assets/img/cards/jap-1.jpg",
       "category": "japanese",
       "duration": "6 Weeks",
       "prerequisites": "Absolute Beginner (No prior study)",
@@ -159,13 +243,209 @@
       "name": "JLPT Core Prep Track",
       "description": "Accelerated vocabulary acquisition blueprints paired with strict Kanji reading techniques.",
       "price": 195,
-      "image": "./assets/img/cards/image12.jpg",
+      "image": "./assets/img/cards/jap-2.jpg",
       "category": "japanese",
       "duration": "16 Weeks",
       "prerequisites": "Intermediate N4/N3 Level",
       "parameters": {
         "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 65 },
         "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 95 }
+      }
+    },
+    {
+      "id": "jap-3",
+      "name": "Elementary Japanese Conversation",
+      "description": "Develop essential speech habits for daily social interactions and practical transit scenarios.",
+      "price": 130,
+      "image": "./assets/img/cards/jap-3.jpg",
+      "category": "japanese",
+      "duration": "8 Weeks",
+      "prerequisites": "Basic Kana Knowledge",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 40 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 70 }
+      }
+    },
+    {
+      "id": "jap-4",
+      "name": "Kanji Blueprint Intensive",
+      "description": "Master radical identification methods and structural mnemonics for 300 essential characters.",
+      "price": 110,
+      "image": "./assets/img/cards/jap-4.jpg",
+      "category": "japanese",
+      "duration": "10 Weeks",
+      "prerequisites": "Basic Hiragana Mastery",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 35 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 60 }
+      }
+    },
+    {
+      "id": "jap-5",
+      "name": "Keigo Business Etiquette Pro",
+      "description": "Formal honorific frameworks tailored for professional client relations and office environments.",
+      "price": 220,
+      "image": "./assets/img/cards/jap-5.jpg",
+      "category": "japanese",
+      "duration": "12 Weeks",
+      "prerequisites": "Upper-Intermediate N3 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 75 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 110 }
+      }
+    },
+    {
+      "id": "jap-6",
+      "name": "Anime & Pop-Culture Translation",
+      "description": "Explore colloquial sentence blocks, native particle usage patterns, and media subtexts.",
+      "price": 125,
+      "image": "./assets/img/cards/jap-6.jpg",
+      "category": "japanese",
+      "duration": "6 Weeks",
+      "prerequisites": "Elementary N5 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 40 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 65 }
+      }
+    },
+    {
+      "id": "jap-7",
+      "name": "Travel Survival Language Core",
+      "description": "Crucial conversation loops for dining reservations, emergency routing, and hospitality settings.",
+      "price": 90,
+      "image": "./assets/img/cards/jap-7.jpg",
+      "category": "japanese",
+      "duration": "4 Weeks",
+      "prerequisites": "No prior study required",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 30 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 45 }
+      }
+    },
+    {
+      "id": "jap-8",
+      "name": "Advanced News Text Analysis",
+      "description": "Read actual media publications, decode complex grammar constructs, and parse social debates.",
+      "price": 165,
+      "image": "./assets/img/cards/jap-8.jpg",
+      "category": "japanese",
+      "duration": "12 Weeks",
+      "prerequisites": "Advanced N2 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 55 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 85 }
+      }
+    },
+    {
+      "id": "pol-1",
+      "name": "Polish Foundations & Phonetics",
+      "description": "Master difficult pronunciation sounds, essential vocabulary clusters, and core introductory social phrasing.",
+      "price": 105,
+      "image": "./assets/img/cards/pol-1.jpg",
+      "category": "polish",
+      "duration": "6 Weeks",
+      "prerequisites": "Absolute Beginner (No prior study)",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 35 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 60 }
+      }
+    },
+    {
+      "id": "pol-2",
+      "name": "Survival Polish for Expats",
+      "description": "Practical conversational navigation loops built specifically for managing daily life, dining, and transit.",
+      "price": 125,
+      "image": "./assets/img/cards/pol-2.jpg",
+      "category": "polish",
+      "duration": "8 Weeks",
+      "prerequisites": "Elementary Pronunciation",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 40 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 65 }
+      }
+    },
+    {
+      "id": "pol-3",
+      "name": "Intermediate Polish Immersive",
+      "description": "Expand speech fluidity, eliminate pauses, and tackle the 7 grammatical case variations through dialogue frameworks.",
+      "price": 140,
+      "image": "./assets/img/cards/pol-3.jpg",
+      "category": "polish",
+      "duration": "10 Weeks",
+      "prerequisites": "Basic A2 Level or equivalent",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 50 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 75 }
+      }
+    },
+    {
+      "id": "pol-4",
+      "name": "Advanced Polish Grammar Lab",
+      "description": "Deep dive into stylistic nuances, perfective/imperfective verbs, and advanced written compositions.",
+      "price": 115,
+      "image": "./assets/img/cards/pol-4.jpg",
+      "category": "polish",
+      "duration": "8 Weeks",
+      "prerequisites": "Intermediate B1 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 35 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 55 }
+      }
+    },
+    {
+      "id": "pol-5",
+      "name": "Business & Commercial Polish",
+      "description": "Professional syntax formatting, corporate email structures, and localized market presentation strategies.",
+      "price": 185,
+      "image": "./assets/img/cards/pol-5.jpg",
+      "category": "polish",
+      "duration": "12 Weeks",
+      "prerequisites": "Intermediate B2 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 65 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 95 }
+      }
+    },
+    {
+      "id": "pol-6",
+      "name": "Polish Culture & Cinema Analysis",
+      "description": "Read classic literary text segments, critique cinematic historical pieces, and build advanced analytical discussion skills.",
+      "price": 130,
+      "image": "./assets/img/cards/pol-6.jpg",
+      "category": "polish",
+      "duration": "8 Weeks",
+      "prerequisites": "Intermediate B2 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 45 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 70 }
+      }
+    },
+    {
+      "id": "pol-7",
+      "name": "Esa / Certification Preparation",
+      "description": "Targeted test strategies, error monitoring drills, and composition reviews for official proficiency exams.",
+      "price": 205,
+      "image": "./assets/img/cards/pol-7.jpg",
+      "category": "polish",
+      "duration": "10 Weeks",
+      "prerequisites": "Upper-Intermediate B2 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 70 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 100 }
+      }
+    },
+    {
+      "id": "pol-8",
+      "name": "Media Parsing & Editorial Debate",
+      "description": "Analyze active Polish news publications, unpack idiomatic social commentary, and run unscripted debates.",
+      "price": 150,
+      "image": "./assets/img/cards/pol-8.jpg",
+      "category": "polish",
+      "duration": "12 Weeks",
+      "prerequisites": "Advanced C1 Level",
+      "parameters": {
+        "intensity": { "name": "Standard Track", "intensive": "Intensive Bootcamp", "int_price": 50 },
+        "format": { "group": "Group Sessions", "private": "1-on-1 Private", "priv_price": 80 }
       }
     }
   ]

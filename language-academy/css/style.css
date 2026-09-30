@@ -364,6 +364,48 @@ button {
   background-color: var(--accent-color);
 }
 
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-direction: row;
+  gap: 14px;
+  padding: 12px 24px;
+  
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--btn-border);
+  border-radius: 16px;
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+}
+
+.category-btn--flag {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+  border: 1px solid var(--text-muted);
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform var(--transition-speed) ease;
+}
+
+.category-btn:hover .category-btn--flag {
+  transform: scale(1.04);
+}
+
+@media (max-width: 635px) {
+  .category-btn {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 20px;
+  }
+}
+
 .banner-divider-1,
 .banner-divider-2 {
   width: 100%;
@@ -851,6 +893,12 @@ button {
   .catalog__grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .catalog__categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 }
 
